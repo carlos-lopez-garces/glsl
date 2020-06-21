@@ -68,10 +68,8 @@ void ScenePhong::resize(int w, int h)
 void ScenePhong::compileAndLinkShader()
 {
 	try {
-    	prog.compileShader("shader/phong.vert.glsl");
-    	prog.compileShader("shader/phong.frag.glsl");
-		//prog.compileShader("shader/function.vert.glsl");
-		//prog.compileShader("shader/function.frag.glsl");
+    	prog.compileShader("shader/phong.my.vert");
+    	prog.compileShader("shader/phong.my.frag");
     	prog.link();
     	prog.use();
     } catch(GLSLProgramException & e) {
