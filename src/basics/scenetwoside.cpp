@@ -70,8 +70,8 @@ void SceneTwoSide::resize(int w, int h)
 void SceneTwoSide::compileAndLinkShader()
 {
 	try {
-    	prog.compileShader("shader/twoside.vert.glsl");
-    	prog.compileShader("shader/twoside.frag.glsl");
+    	prog.compileShader("shader/twoside.my.vert");
+    	prog.compileShader("shader/twoside.my.frag");
 		//prog.compileShader("shader/twoside_conditional.vert.glsl");
 		//prog.compileShader("shader/twoside_conditional.frag.glsl");
     	prog.link();
