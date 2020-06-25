@@ -37,6 +37,7 @@ void SceneFlat::update( float t )
 void SceneFlat::render()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glProvokingVertex(GL_FIRST_VERTEX_CONVENTION);
 
 
     glm::vec4 worldLight = glm::vec4(2.0f,4.0f,1.0f,1.0f);
