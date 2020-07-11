@@ -6,6 +6,7 @@
 GLuint Texture::loadTexture( const std::string & fName ) {
     int width, height;
     unsigned char * data = Texture::loadPixels(fName, width, height);
+    printf("Texture::loadTexture data %p\n", data);
 	GLuint tex = 0;
     if( data != nullptr ) {
         glGenTextures(1, &tex);
@@ -17,6 +18,8 @@ GLuint Texture::loadTexture( const std::string & fName ) {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 
         Texture::deletePixels(data);
+
+        printf("Texture::loadTexture loaded texture");
     }
 
     return tex;
@@ -29,6 +32,7 @@ void Texture::deletePixels(unsigned char *data) {
 unsigned char *Texture::loadPixels(const std::string &fName, int & width, int & height, bool flip) {
     int bytesPerPix;
     stbi_set_flip_vertically_on_load(flip);
+    printf("Texture::loadPixels file name %s\n", fName.c_str());
     unsigned char *data = stbi_load(fName.c_str(), &width, &height, &bytesPerPix, 4);
     return data;
 }
