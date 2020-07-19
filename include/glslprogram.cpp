@@ -147,7 +147,7 @@ void GLSLProgram::compileShader(const string &source,
         // Compile failed, get log
 		std::string msg;
 		if (fileName) {
-			msg = string(fileName) + ": shader compliation failed\n";
+			msg = string(fileName) + ": shader compilation failed\n";
 		}
 		else {
 			msg = "Shader compilation failed.\n";
