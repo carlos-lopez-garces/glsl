@@ -10,7 +10,7 @@ This repository is the result of studying:
 * Phong reflection model, per-vertex ambient, diffuse, and specular Gouraud shading
 * Gouraud vertex interpolation shading vs Flat shading
 
-2 Textures and maps ([notes/1 Shading Models](notes/Textures_and_Maps.pdf))
+2 Textures and maps ([notes/2 Textures and Maps](notes/Textures_and_Maps.pdf))
 
 * Diffuse textures
 * Textures and shading models
@@ -21,4 +21,4 @@ This repository is the result of studying:
 * Image-based lighting, irradiance environment maps
 * Rendering to a texture
 
-3 Real-time path tracing
+3 Real-time path tracing ([Shadertoy](https://www.shadertoy.com/view/WscyWr))
