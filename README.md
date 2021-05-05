@@ -1,7 +1,7 @@
 This repository is the result of studying:
 
 * OpenGL 4.0 Shading Language Cookbook, by David Wolff
-* Alan Wolfe's [blog](blog.demofox.org)
+* Alan Wolfe's [blog](https://blog.demofox.org)
 
 1 Shading models ([notes/1 Shading Models](notes/Shading_Models.pdf))
 
@@ -22,3 +22,7 @@ This repository is the result of studying:
 * Rendering to a texture
 
 3 Real-time path tracing ([Shadertoy](https://www.shadertoy.com/view/WscyWr))
+
+* Basic camera, diffuse, emissive
+* Glossy reflections
+* Fresnel, rough refraction and absorption; orbit camera
