@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6695961A-5FFE-4CA8-8278-08B574497B6D}</ProjectGuid>
+    <RootNamespace>glsl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\carlo\Code\src\github.com\Dav1dde\glad\build\include;C:\Users\carlo\Code\src\github.com\glfw\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\carlo\Code\src\github.com\glfw\glfw\build\src\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\carlo\Code\src\github.com\carlos-lopez-garces\glsl\include;C:\Users\carlo\Code\src\github.com\g-truc\glm;C:\Users\carlo\Code\src\github.com\glfw\glfw\include;C:\Users\carlo\Code\src\github.com\Dav1dde\glad\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\carlo\Code\src\github.com\glfw\glfw\build\src\Debug;C:\Users\carlo\Code\src\github.com\Dav1dde\glad\build\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glad.lib;opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\cube.cpp" />
+    <ClCompile Include="include\glslprogram.cpp" />
+    <ClCompile Include="include\glutils.cpp" />
+    <ClCompile Include="include\grid.cpp" />
+    <ClCompile Include="include\objmesh.cpp" />
+    <ClCompile Include="include\plane.cpp" />
+    <ClCompile Include="include\skybox.cpp" />
+    <ClCompile Include="include\sphere.cpp" />
+    <ClCompile Include="include\stbimpl.cpp" />
+    <ClCompile Include="include\teapot.cpp" />
+    <ClCompile Include="include\teapotpatch.cpp" />
+    <ClCompile Include="include\texture.cpp" />
+    <ClCompile Include="include\torus.cpp" />
+    <ClCompile Include="include\trianglemesh.cpp" />
+    <ClCompile Include="src\scenes\main.cpp" />
+    <ClCompile Include="src\scenes\scenealphatest.cpp" />
+    <ClCompile Include="src\scenes\scenediffibl.cpp" />
+    <ClCompile Include="src\scenes\scenediffuse.cpp" />
+    <ClCompile Include="src\scenes\scenedirectional.cpp" />
+    <ClCompile Include="src\scenes\scenediscard.cpp" />
+    <ClCompile Include="src\scenes\sceneflat.cpp" />
+    <ClCompile Include="src\scenes\scenefog.cpp" />
+    <ClCompile Include="src\scenes\scenemultilight.cpp" />
+    <ClCompile Include="src\scenes\scenemultitex.cpp" />
+    <ClCompile Include="src\scenes\scenenormalmap.cpp" />
+    <ClCompile Include="src\scenes\sceneparallax.cpp" />
+    <ClCompile Include="src\scenes\scenepbr.cpp" />
+    <ClCompile Include="src\scenes\sceneperfragment.cpp" />
+    <ClCompile Include="src\scenes\scenephong.cpp" />
+    <ClCompile Include="src\scenes\sceneprojtex.cpp" />
+    <ClCompile Include="src\scenes\scenereflectcube.cpp" />
+    <ClCompile Include="src\scenes\scenerefractcube.cpp" />
+    <ClCompile Include="src\scenes\scenerendertotex.cpp" />
+    <ClCompile Include="src\scenes\scenesamplerobj.cpp" />
+    <ClCompile Include="src\scenes\scenespot.cpp" />
+    <ClCompile Include="src\scenes\scenesubroutine.cpp" />
+    <ClCompile Include="src\scenes\scenetexture.cpp" />
+    <ClCompile Include="src\scenes\scenetoon.cpp" />
+    <ClCompile Include="src\scenes\scenetwoside.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\aabb.h" />
+    <ClInclude Include="include\cookbookogl.h" />
+    <ClInclude Include="include\cube.h" />
+    <ClInclude Include="include\drawable.h" />
+    <ClInclude Include="include\glslprogram.h" />
+    <ClInclude Include="include\glutils.h" />
+    <ClInclude Include="include\grid.h" />
+    <ClInclude Include="include\objmesh.h" />
+    <ClInclude Include="include\plane.h" />
+    <ClInclude Include="include\random.h" />
+    <ClInclude Include="include\scene.h" />
+    <ClInclude Include="include\scenerunner.h" />
+    <ClInclude Include="include\skybox.h" />
+    <ClInclude Include="include\sphere.h" />
+    <ClInclude Include="include\teapot.h" />
+    <ClInclude Include="include\teapotdata.h" />
+    <ClInclude Include="include\teapotpatch.h" />
+    <ClInclude Include="include\texture.h" />
+    <ClInclude Include="include\torus.h" />
+    <ClInclude Include="include\trianglemesh.h" />
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="src\scenes\scenealphatest.h" />
+    <ClInclude Include="src\scenes\scenediffibl.h" />
+    <ClInclude Include="src\scenes\scenediffuse.h" />
+    <ClInclude Include="src\scenes\scenedirectional.h" />
+    <ClInclude Include="src\scenes\scenediscard.h" />
+    <ClInclude Include="src\scenes\sceneflat.h" />
+    <ClInclude Include="src\scenes\scenefog.h" />
+    <ClInclude Include="src\scenes\scenemultilight.h" />
+    <ClInclude Include="src\scenes\scenemultitex.h" />
+    <ClInclude Include="src\scenes\scenenormalmap.h" />
+    <ClInclude Include="src\scenes\sceneparallax.h" />
+    <ClInclude Include="src\scenes\scenepbr.h" />
+    <ClInclude Include="src\scenes\sceneperfragment.h" />
+    <ClInclude Include="src\scenes\scenephong.h" />
+    <ClInclude Include="src\scenes\sceneprojtex.h" />
+    <ClInclude Include="src\scenes\scenereflectcube.h" />
+    <ClInclude Include="src\scenes\scenerefractcube.h" />
+    <ClInclude Include="src\scenes\scenerendertotex.h" />
+    <ClInclude Include="src\scenes\scenesamplerobj.h" />
+    <ClInclude Include="src\scenes\scenespot.h" />
+    <ClInclude Include="src\scenes\scenesubroutine.h" />
+    <ClInclude Include="src\scenes\scenetexture.h" />
+    <ClInclude Include="src\scenes\scenetoon.h" />
+    <ClInclude Include="src\scenes\scenetwoside.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\CMakeLists.txt" />
+    <Text Include="src\textures\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\scenes\shader\alphatest.frag.glsl" />
+    <None Include="src\scenes\shader\alphatest.my.frag.glsl" />
+    <None Include="src\scenes\shader\alphatest.my.vert.glsl" />
+    <None Include="src\scenes\shader\alphatest.vert.glsl" />
+    <None Include="src\scenes\shader\alphatest_41.fs" />
+    <None Include="src\scenes\shader\alphatest_41.vs" />
+    <None Include="src\scenes\shader\blinnphong.frag.glsl" />
+    <None Include="src\scenes\shader\blinnphong.vert.glsl" />
+    <None Include="src\scenes\shader\cubemap_reflect.fs" />
+    <None Include="src\scenes\shader\cubemap_reflect.my.fs" />
+    <None Include="src\scenes\shader\cubemap_reflect.my.vs" />
+    <None Include="src\scenes\shader\cubemap_reflect.vs" />
+    <None Include="src\scenes\shader\cubemap_reflect_41.fs" />
+    <None Include="src\scenes\shader\cubemap_reflect_41.vs" />
+    <None Include="src\scenes\shader\cubemap_refract.fs" />
+    <None Include="src\scenes\shader\cubemap_refract.my.fs" />
+    <None Include="src\scenes\shader\cubemap_refract.my.vs" />
+    <None Include="src\scenes\shader\cubemap_refract.vs" />
+    <None Include="src\scenes\shader\cubemap_refract_41.fs" />
+    <None Include="src\scenes\shader\cubemap_refract_41.vs" />
+    <None Include="src\scenes\shader\diffuse.frag" />
+    <None Include="src\scenes\shader\diffuse.my.frag" />
+    <None Include="src\scenes\shader\diffuse.my.vert" />
+    <None Include="src\scenes\shader\diffuse.vert" />
+    <None Include="src\scenes\shader\diffuseibl.frag.glsl" />
+    <None Include="src\scenes\shader\diffuseibl.my.frag.glsl" />
+    <None Include="src\scenes\shader\diffuseibl.my.vert.glsl" />
+    <None Include="src\scenes\shader\diffuseibl.vert.glsl" />
+    <None Include="src\scenes\shader\directional.frag.glsl" />
+    <None Include="src\scenes\shader\directional.vert.glsl" />
+    <None Include="src\scenes\shader\discard.frag.glsl" />
+    <None Include="src\scenes\shader\discard.vert.glsl" />
+    <None Include="src\scenes\shader\flat.frag.glsl" />
+    <None Include="src\scenes\shader\flat.vert.glsl" />
+    <None Include="src\scenes\shader\fog.frag.glsl" />
+    <None Include="src\scenes\shader\fog.vert.glsl" />
+    <None Include="src\scenes\shader\function.frag.glsl" />
+    <None Include="src\scenes\shader\function.vert.glsl" />
+    <None Include="src\scenes\shader\gooch.my.frag" />
+    <None Include="src\scenes\shader\gooch.my.vert" />
+    <None Include="src\scenes\shader\multilight.frag.glsl" />
+    <None Include="src\scenes\shader\multilight.vert.glsl" />
+    <None Include="src\scenes\shader\multitex.frag.glsl" />
+    <None Include="src\scenes\shader\multitex.my.frag.glsl" />
+    <None Include="src\scenes\shader\multitex.my.vert.glsl" />
+    <None Include="src\scenes\shader\multitex.vert.glsl" />
+    <None Include="src\scenes\shader\multitex_41.fs" />
+    <None Include="src\scenes\shader\multitex_41.vs" />
+    <None Include="src\scenes\shader\normalmap.frag.glsl" />
+    <None Include="src\scenes\shader\normalmap.my.vert.glsl" />
+    <None Include="src\scenes\shader\normalmap.vert.glsl" />
+    <None Include="src\scenes\shader\normalmap_41.fs" />
+    <None Include="src\scenes\shader\normalmap_41.vs" />
+    <None Include="src\scenes\shader\parallax.frag.glsl" />
+    <None Include="src\scenes\shader\parallax.vert.glsl" />
+    <None Include="src\scenes\shader\pbr.frag.glsl" />
+    <None Include="src\scenes\shader\pbr.vert.glsl" />
+    <None Include="src\scenes\shader\perfrag.frag.glsl" />
+    <None Include="src\scenes\shader\perfrag.vert.glsl" />
+    <None Include="src\scenes\shader\phong.frag.glsl" />
+    <None Include="src\scenes\shader\phong.my.frag" />
+    <None Include="src\scenes\shader\phong.my.vert" />
+    <None Include="src\scenes\shader\phong.vert.glsl" />
+    <None Include="src\scenes\shader\projtex.fs" />
+    <None Include="src\scenes\shader\projtex.vs" />
+    <None Include="src\scenes\shader\projtex_41.fs" />
+    <None Include="src\scenes\shader\projtex_41.vs" />
+    <None Include="src\scenes\shader\rendertotex.fs" />
+    <None Include="src\scenes\shader\rendertotex.vs" />
+    <None Include="src\scenes\shader\skybox.frag.glsl" />
+    <None Include="src\scenes\shader\skybox.my.fs" />
+    <None Include="src\scenes\shader\skybox.my.vs" />
+    <None Include="src\scenes\shader\skybox.vert.glsl" />
+    <None Include="src\scenes\shader\spot.frag.glsl" />
+    <None Include="src\scenes\shader\spot.vert.glsl" />
+    <None Include="src\scenes\shader\steep-parallax.frag.glsl" />
+    <None Include="src\scenes\shader\steep-parallax.vert.glsl" />
+    <None Include="src\scenes\shader\subroutine.frag.glsl" />
+    <None Include="src\scenes\shader\subroutine.vert.glsl" />
+    <None Include="src\scenes\shader\texture.frag.glsl" />
+    <None Include="src\scenes\shader\texture.my.frag.glsl" />
+    <None Include="src\scenes\shader\texture.my.vert.glsl" />
+    <None Include="src\scenes\shader\texture.vert.glsl" />
+    <None Include="src\scenes\shader\texture_41.fs" />
+    <None Include="src\scenes\shader\texture_41.vs" />
+    <None Include="src\scenes\shader\toon.frag.glsl" />
+    <None Include="src\scenes\shader\toon.vert.glsl" />
+    <None Include="src\scenes\shader\twoside.frag.glsl" />
+    <None Include="src\scenes\shader\twoside.my.frag" />
+    <None Include="src\scenes\shader\twoside.my.vert" />
+    <None Include="src\scenes\shader\twoside.vert.glsl" />
+    <None Include="src\scenes\shader\twoside_conditional.frag.glsl" />
+    <None Include="src\scenes\shader\twoside_conditional.vert.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\shader">
+      <UniqueIdentifier>{ff36d4e8-b0af-4e24-b6c6-6a8a87b6579e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\cube.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glslprogram.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glutils.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\grid.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\objmesh.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\plane.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\skybox.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sphere.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\stbimpl.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\teapot.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\teapotpatch.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\texture.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\torus.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\trianglemesh.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenealphatest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenediffibl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenediffuse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenedirectional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenediscard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\sceneflat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenefog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenemultilight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenemultitex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenenormalmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\sceneparallax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenepbr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\sceneperfragment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenephong.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\sceneprojtex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenereflectcube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenerefractcube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenerendertotex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenesamplerobj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenespot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenesubroutine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenetexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenetoon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\scenetwoside.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\aabb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cookbookogl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glslprogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\objmesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scenerunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\teapot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\teapotdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\teapotpatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\torus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\trianglemesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenealphatest.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenediffibl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenediffuse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenedirectional.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenediscard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\sceneflat.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenefog.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenemultilight.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenemultitex.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenenormalmap.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\sceneparallax.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenepbr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\sceneperfragment.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenephong.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\sceneprojtex.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenereflectcube.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenerefractcube.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenerendertotex.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenesamplerobj.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenespot.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenesubroutine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenetexture.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenetoon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scenetwoside.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\CMakeLists.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="src\textures\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\scenes\shader\alphatest.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\alphatest.my.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\alphatest.my.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\alphatest.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\alphatest_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\alphatest_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\blinnphong.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\blinnphong.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect.my.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect.my.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_reflect_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract.my.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract.my.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\cubemap_refract_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuse.frag">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuse.my.frag">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuse.my.vert">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuse.vert">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuseibl.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuseibl.my.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuseibl.my.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\diffuseibl.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\directional.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\directional.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\discard.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\discard.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\flat.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\flat.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\fog.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\fog.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\function.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\function.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\gooch.my.frag">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\gooch.my.vert">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multilight.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multilight.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex.my.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex.my.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\multitex_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\normalmap.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\normalmap.my.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\normalmap.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\normalmap_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\normalmap_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\parallax.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\parallax.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\pbr.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\pbr.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\perfrag.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\perfrag.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\phong.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\phong.my.frag">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\phong.my.vert">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\phong.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\projtex.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\projtex.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\projtex_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\projtex_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\rendertotex.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\rendertotex.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\skybox.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\skybox.my.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\skybox.my.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\skybox.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\spot.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\spot.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\steep-parallax.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\steep-parallax.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\subroutine.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\subroutine.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture.my.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture.my.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture_41.fs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\texture_41.vs">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\toon.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\toon.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside.my.frag">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside.my.vert">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside_conditional.frag.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+    <None Include="src\scenes\shader\twoside_conditional.vert.glsl">
+      <Filter>Source Files\shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
