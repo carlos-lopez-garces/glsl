@@ -1,3 +1,0 @@
-C:/Users/carlo/Code/src/github.com/carlos-lopez-garces/glsl/src/textures/out/build/x64-Debug (default)/CMakeFiles/chapter05.dir
-C:/Users/carlo/Code/src/github.com/carlos-lopez-garces/glsl/src/textures/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
-C:/Users/carlo/Code/src/github.com/carlos-lopez-garces/glsl/src/textures/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
