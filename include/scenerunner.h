@@ -3,8 +3,8 @@
 #include <GLFW/glfw3.h>
 #include "glutils.h"
 
-#define WIN_WIDTH 800
-#define WIN_HEIGHT 600
+#define WIN_WIDTH 1920
+#define WIN_HEIGHT 1080
 
 #include <map>
 #include <string>
@@ -113,23 +113,24 @@ private:
         }
     }
 
-    void mainLoop(GLFWwindow * window, std::unique_ptr<Scene> scene) {
-        
-        scene->setDimensions(fbw, fbh);
-        scene->initScene();
-        scene->resize(fbw, fbh);
+  void mainLoop(GLFWwindow * window, std::unique_ptr<Scene> scene) {
+    scene->setDimensions(fbw, fbh);
+    scene->initScene();
+    scene->resize(fbw, fbh);
 
-        while( ! glfwWindowShouldClose(window) && !glfwGetKey(window, GLFW_KEY_ESCAPE) ) {
-            GLUtils::checkForOpenGLError(__FILE__,__LINE__);
+    while( ! glfwWindowShouldClose(window) && !glfwGetKey(window, GLFW_KEY_ESCAPE) ) {
+      GLUtils::checkForOpenGLError(__FILE__,__LINE__);
 			
-            scene->update(float(glfwGetTime()));
-            scene->render();
-            glfwSwapBuffers(window);
+      scene->update(float(glfwGetTime()));
+      scene->render();
+      glfwSwapBuffers(window);
 
-            glfwPollEvents();
+      glfwPollEvents();
 			int state = glfwGetKey(window, GLFW_KEY_SPACE);
-			if (state == GLFW_PRESS)
-				scene->animate(!scene->animating());
-        }
+      if (state == GLFW_PRESS) {
+        scene->animate(!scene->animating());
+      }
     }
+    scene->debug();
+  }
 };
